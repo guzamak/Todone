@@ -8,11 +8,12 @@ import { options } from "./api/auth/[...nextauth]/options";
 
 export default async function Home() {
   const session = await getServerSession(options);
+  console.log(session);
 
   return (
     <div className="w-screen min-h-screen">
       <div>
-        <Hero session={session} />
+        <Hero session={session}/>
       </div>
       <div className="w-full flex items-center justify-center">
         <Dashboard session={session}/>
