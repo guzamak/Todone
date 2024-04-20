@@ -69,9 +69,9 @@ export default function Todo() {
 
 
   return (
-    <div className="w-full  md:w-3/4 md:text-base p-3">
-      <TodoForm todos={todos} setTodos={setTodos} />
-      <Table className="rounded-md border-border h-10 overflow-clip relative w-full" >
+    <div className="w-full md:w-3/4 md:text-base p-3">
+      <TodoForm todos={todos} setTodos={setTodos}/>
+      <Table className="rounded-md border-border h-10 overflow-clip relative w-full">
         <TableHeader>
           <TableRow>
             <TableHead><p className="text-xs md:text-base font-semibold">Status</p></TableHead>

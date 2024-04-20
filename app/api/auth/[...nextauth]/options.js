@@ -10,10 +10,5 @@ export const options = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  callbacks: {
-    async redirect() {
-      return "/";
-    },
-  },
   secret: process.env.NEXTAUTH_SECRET,
 };
