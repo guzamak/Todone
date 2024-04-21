@@ -207,7 +207,6 @@ export default function Flow() {
       },
     };
     setNodes((nds) => nds.concat(newNode));
-    console.log(newNode);
   }, [setNodes, nodes]);
 
   return (
