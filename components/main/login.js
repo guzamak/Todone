@@ -6,8 +6,8 @@ export default function Login() {
   return (
       <Button
         variant="outline"
-        onClick={() => {
-          signIn("google");
+        onClick={async() => {
+          await signIn("google");
         }}
       >
         Google
