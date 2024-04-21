@@ -40,6 +40,7 @@ export default function Flow() {
   const [isMenu, setIsMenu] = useState(false);
 
   const onNodeClick = (e, vol) => {
+    console.log(vol.data)
     setEditValue({label:vol.data.label, isFinished: vol.data.isFinished});
     setNodeId(vol.id);
     setEdgeId();
