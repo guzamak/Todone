@@ -40,7 +40,6 @@ export default function Flow() {
   const [isMenu, setIsMenu] = useState(false);
 
   const onNodeClick = (e, vol) => {
-    console.log(vol.data)
     setEditValue({label:vol.data.label, isFinished: vol.data.isFinished});
     setNodeId(vol.id);
     setEdgeId();
@@ -260,7 +259,7 @@ export default function Flow() {
         <Input
           placeholder="Your nodes label"
           onChange={handleLabelChange}
-          defaultValue={editValue?.label}
+          value={editValue?.label}
           className="focus-visible:ring-0 text-xs md:text-sm"
         />
         <div className="flex items-center space-x-2">
