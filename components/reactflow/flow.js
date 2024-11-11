@@ -9,6 +9,7 @@ import ReactFlow, {
   MiniMap,
   Background,
   ControlButton,
+  updateEdge
 } from "reactflow";
 import "reactflow/dist/style.css";
 import { useParams } from "next/navigation";
